@@ -104,7 +104,7 @@
 
 @font-face { font-family: 'Glacial Indifference'; src: url("../fonts/GlacialIndifference-Regular.html") format("woff2"), url("../fonts/GlacialIndifference-Regular.woff") format("woff"); font-weight: normal; font-display: swap; font-style: normal; }
 @font-face { font-family: 'Glacial Indifference'; src: url("../fonts/GlacialIndifference-Bold.html") format("woff2"), url("../fonts/GlacialIndifference-Bold.woff") format("woff"); font-weight: bold; font-display: swap; font-style: normal; }
-html, body { max-width: 500px; }
+html, body { max-width: 600px; }
 
 html { font-size: 100%; overflow-x: hidden; }
 
