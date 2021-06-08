@@ -1,0 +1,237 @@
+<!doctype html>
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+		<link rel="stylesheet" href="assets/vendors/liquid-icon/liquid-icon.min.css" />
+		<link rel="stylesheet" href="assets/vendors/font-awesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="assets/css/theme-vendors.min.css" />
+		<link rel="stylesheet" href="assets/css/theme.min.css" />
+		<link rel="stylesheet" href="assets/css/themes/creative.css" />
+		<script src="assets/vendors/jquery.min.js"></script>
+		<script src="assets/js/theme-vendors.js"></script>
+		<script src="assets/js/theme.min.js"></script>
+		<script src="assets/js/jquery-3.6.0.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+
+		<style type="text/css">
+		body {
+			margin: 15px;
+			padding: 0px;
+			font-size: 13px;
+			background-color: #f7d4db;
+		}
+		.popupContainerDiv {
+			width: 500px;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="popupContainerDiv">
+			<section class="vc_row fullheight d-flex flex-wrap align-items-center pb-50">
+				<div class="lqd-particles-bg-wrap">
+					<div class="ld-particles-container">
+						<div class="ld-particles-inner" id="ld-1527244273759-519b63e0-a9d6" data-particles="true" data-particles-options='{"particles":{"number":{"value":5,"density":2},"color":{"value":["#f9b851","#60eacb","#ff97af","#4e6bff"]},"shape":{"type":["circle","edge","triangle"]},"size":{"value":55,"random":true,"anim":{"enable":true,"size_min":40,"speed":5}},"move":{"enable":true,"direction":"right","speed":1,"random":true,"out_mode":"out","attract":{"enable":true,"rotateX":1200,"rotateY":600}}},"interactivity":[],"retina_detect":true}'>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row d-flex flex-wrap align-items-center">
+						<div class="lqd-column col-lg-5 col-md-6 lqd-column" data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":1200,"delay":100,"initValues":{"translateY":51,"opacity":0},"animations":{"translateY":0,"opacity":1}}'>
+							<div class="ld-fancy-heading mask-text">
+								<h1 data-split-text="true" data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":".split-inner","duration":1200,"delay":100,"easing":"easeOutQuint","direction":"forward","initValues":{"scale":1},"animations":{"scale":1}}' data-split-options='{"type":"lines"}'>
+									<span class="ld-fh-txt"> Student Career Prediction</span>
+								</h1>
+							</div>
+							<div class="ld-fancy-heading mask-text mb-75">
+								<p data-split-text="true" data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":".split-inner","duration":1200,"delay":100,"easing":"easeOutQuint","direction":"forward","initValues":{"scale":1},"animations":{"scale":1}}' data-split-options='{"type":"lines"}'>
+									<span class="ld-fh-txt"> This prediction will help you in improving and motivating yourself to a better career path if your capabilities are not up to the mark to reach their goal and pre-evaluate yourselves before going to the career peek point.</span>
+								</p>
+							</div>
+							<div class="row">
+								<form id="predict">
+									<div class="row">
+										<div class="form-group col-sm-1">
+											<label for="input1">Percentage in Algorithms</label>
+											<input type="number" class="form-control" min="0" max="100" id="input1" name="input1" placeholder="x%" required >
+										</div>
+										<div class="form-group col-sm-1">
+											<label for="input2">Percentage in Programming Concepts</label>
+											<input type="number" class="form-control" min="0" max="100" id="input2" name="input2" placeholder="x%" required >
+										</div>
+										<div class="form-group col-sm-4">
+											<label for="input3">Percentage in Software Engineering</label>
+											<input type="number" class="form-control" min="0" max="100" id="input3" name="input3" placeholder="x%" required >
+										</div>
+									</div>
+									<div class="row">
+										<div class="form-group col-md-4">
+											<label for="input4">Percentage in Computer Networks</label>
+											<input type="number" class="form-control" min="0" max="100" id="input4" name="input4" placeholder="x%" required >
+										</div>
+										<div class="form-group col-md-4">
+											<label for="input5">Percentage in Electronics Subjects</label>
+											<input type="number" class="form-control" min="0" max="100" id="input5" name="input5" placeholder="x%" required >
+										</div>
+										<div class="form-group col-md-4">
+											<label for="input6">Percentage in Computer Architecture</label>
+											<input type="number" class="form-control" min="0" max="100" id="input6" name="input6" placeholder="x%" required >
+										</div>
+									</div>
+									<div class="row">
+										<div class="form-group col-md-4">
+											<label for="input7">Percentage in Mathematics</label>
+											<input type="number" class="form-control" min="0" max="100" id="input7" name="input7" placeholder="x%" required >
+										</div>
+										<div class="form-group col-md-4">
+											<label for="input8">Percentage in Communication skills</label>
+											<input type="number" class="form-control" min="0" max="100" id="input8" name="input8" placeholder="x%" required >
+										</div>
+										<div class="form-group col-md-4">
+											<label for="input0">Percentage in Operating Systems</label>
+											<input type="number" class="form-control" min="0" max="100" id="input0" name="input0" placeholder="x%" required >
+										</div>
+									</div>
+									<div class="row">
+										<div class="form-group col-md-3">
+											<label for="input9">Hours working per day</label>
+											<input type="number" class="form-control" min="0" max="24" id="input9" name="input9" placeholder="0-24 hours" required >
+										</div>
+										<div class="form-group col-md-2">
+											<label for="input10">Logical quotient</label>
+											<input type="number" class="form-control" min="0" max="10" id="input10" name="input10" placeholder="0-10 rating" required >
+										</div>
+										<div class="form-group col-md-3">
+											<label for="input11">Hackathons attended</label>
+											<input type="number" class="form-control" min="0" max="100" id="input11" name="input11" placeholder="x amount" required >
+										</div>
+										<div class="form-group col-md-2">
+											<label for="input12">Coding skills</label>
+											<input type="number" class="form-control" min="0" max="10" id="input12" name="input12" placeholder="0-10 rating" required >
+										</div>
+										<div class="form-group col-md-2">
+											<label for="input13">Public speaking</label>
+											<input type="number" class="form-control" min="0" max="10" id="input13" name="input13" placeholder="0-10 rating" required >
+										</div>
+									</div>
+									<div class="row">
+										<div class="form-group col-md-4">
+											<label for="input14">Can work long time before computer?</label>
+											<select id="input14" name="input14" class="form-control">
+												<option value="1" selected>Yes</option>
+												<option value="0">No</option>
+											</select>
+										</div>
+										<div class="form-group col-md-3">
+											<label for="input15">Self-learning capability?</label>
+											<select id="input15" name="input15" class="form-control">
+												<option value="1" selected>Yes</option>
+												<option value="0">No</option>
+											</select>
+										</div>
+										<div class="form-group col-md-3">
+											<label for="input16">Attended extra-courses?</label>
+											<select id="input16" name="input16" class="form-control">
+												<option value="1" selected>Yes</option>
+												<option value="0">No</option>
+											</select>
+										</div>
+										<div class="form-group col-md-2">
+											<label for="input17">Olympiads</label>
+											<select id="input17" name="input17" class="form-control">
+												<option value="1" selected>Yes</option>
+												<option value="0">No</option>
+											</select>
+										</div>
+									</div>
+									<div class="row">
+										<div class="form-group col-md-3">
+											<label for="input18">Reading and writing skills</label>
+											<select id="input18" name="input18" class="form-control">
+												<option value="2" selected>Excellent</option>
+												<option value="1">Medium</option>
+												<option value="0">Poor</option>
+											</select>
+										</div>
+										<div class="form-group col-md-3">
+											<label for="input19">Management or Technical</label>
+											<select id="input19" name="input19" class="form-control">
+												<option value="1" selected>Technical</option>
+												<option value="0">Management</option>
+											</select>
+										</div>
+										<div class="form-group col-md-3">
+											<label for="input20">Hard/Smart worker</label>
+											<select id="input20" name="input20" class="form-control">
+												<option value="1" selected>Smart worker</option>
+												<option value="0">Hard worker</option>
+											</select>
+										</div>
+										<div class="form-group col-md-3">
+											<label for="input21">Worked in teams?</label>
+											<select id="input21" name="input21" class="form-control">
+												<option value="1" selected>Yes</option>
+												<option value="0">No</option>
+											</select>
+										</div>
+									</div>
+								</form>
+								<div class="lqd-column col-sm-6 mb-3 mb-md-0">
+									<button id="btnLoad" class="btn btn-solid text-uppercase circle btn-bordered border-thin font-size-14 font-weight-semibold" data-localscroll="true" data-localscroll-options='{"scrollBelowSection":true}'>
+										<span>
+										<span class="btn-txt">Predict</span>
+										</span>
+									</button>
+								</div>
+								<div class="lqd-column col-sm-6">
+									<div class="ld-fancy-heading">
+										<p>
+											<span class="ld-fh-txt">
+											<strong><span style="color: #fe688b">Mail us at contact@omkarbabrekar.com</span></strong>
+											<br>
+											<span style="color: #a7a9b8">For any question or concern</span>
+											</span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<script src="assets/js/script.js"></script>
+		<style type="text/css">
+			.lqd-buy-now {
+				position: fixed;
+				right: 30px;
+				bottom: 30px;
+				z-index: 999;
+			}
+			.lqd-buy-now-btn {
+				display: inline-flex;
+				padding: 15px 30px;
+				align-items: center;
+				border: none;
+				border-radius: 50em;
+				background: #fff;
+				box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+				font-size: 15px;
+				line-height: 1.5em;
+				color: #000;
+				transition: all 0.3s;
+			}
+			.lqd-buy-now-btn svg {
+				margin-right: 12px;
+			}
+			.lqd-buy-now-btn:hover {
+				background: rgba(0, 0, 0, 0.8);
+				color: #fff;
+				transform: translateY(-2px);
+			}
+			.lqd-buy-now-btn:hover svg {
+				fill: currentColor;
+			}
+		</style>
+	</body>
+</html>
